@@ -79,4 +79,19 @@ body{
     -ms-transform: translate(90px , -30px) rotate(18deg);
     -o-transform: translate(90px , -30px) rotate(18deg);
 }
+.logContent{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.logBox{
+    width: 600px;
+    height: 800px;
+    border-radius: 40px;
+    border: 3px solid whitesmoke;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
 /* ===== card css style end ===== */
