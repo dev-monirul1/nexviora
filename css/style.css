@@ -102,15 +102,14 @@ body{
     -o-transform: translate(90px , -30px) rotate(18deg);
 }
 .logContent{
-    margin-top: 70px;
+    margin: 70px;
     display: flex;
     justify-content: center;
 }
 .logBox{
-    aspect-ratio: 600/800;
-    padding: 30px 30px;
-    width: 600px;
-    height: 800px;
+    aspect-ratio: 700/900;
+    padding: 35px 30px;
+    
     border-radius: 40px;
    border: 3px solid transparent;
     border-radius: 20px;
@@ -144,7 +143,10 @@ body{
     opacity: 0.7;
 }
 .formWrap{
-    margin-top: 30px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .form .one{
     font-size: 20px;
@@ -152,9 +154,9 @@ body{
     line-height: normal;
     color: #fff;
     text-transform: capitalize;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
-.form .two{
+/* .form .two{
     padding: 10px 15px;
     width: 100%;
     border-radius: 5px;
@@ -170,5 +172,194 @@ body{
     font-weight: 400;
     line-height: normal;
     background-color: #000;
+} */
+ .inputBox {
+    position: relative;
+    width: 100%;
+}
+.inputBox i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2455d6;
+    font-size: 20px;
+}
+.inputBox .togglePassword {
+    position: absolute;
+    left: 94%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    color: #888;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 15px 20px 15px 55px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+}
+.inputBox input::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: #fff;
+    opacity: .7;
+} 
+.inputBox input:focus{
+    color: #fff;
+    opacity: .7;
+    outline: none;
+}
+
+
+.genderGroup {
+    margin-top: 30px;
+}
+
+.genderBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 35px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.genderOption {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.genderOption input {
+    display: none;
+}
+
+.customRadio {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.genderOption input:checked + .customRadio {
+    border-color: #2455d6;
+}
+
+.genderOption input:checked + .customRadio::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #2455d6;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.termsBox {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin: 35px 0 30px;
+}
+
+.checkOption {
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.checkOption input {
+    display: none;
+}
+
+.customCheck {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    position: relative;
+}
+
+.checkOption input:checked + .customCheck {
+    background: #2455d6;
+    border-color: #2455d6;
+}
+
+.checkOption input:checked + .customCheck::after {
+    content: "✓";
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.termsBox p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #fff;
+    letter-spacing: 1.8px;
+}
+
+.termsBox a,
+.loginText a {
+    color: #2455d6;
+    text-decoration: none;
+}
+
+
+
+.signupBtn {
+    width: 100%;
+    padding: 16px;
+
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+    background: #2455d6;
+    color: #fff;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.signupBtn:hover {
+    color: #2455d6;
+    background: transparent;
+    border: 2px solid #2455d6;
+}
+
+
+.loginText {
+    margin-top: 30px;
+
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
 }
 /* ===== card css style end ===== */

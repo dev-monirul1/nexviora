@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Page</title>
     <!-- ===== google font link start ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pliant:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <!-- ===== google font link end ===== -->
+
+    <!-- ===== font awesome cdn link start ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- ===== font awesome cdn link end ===== -->
+
     <!-- ===== css link start ===== -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- ===== css link end ===== -->
@@ -39,9 +46,78 @@
                     <form class="formWrap" action="">
                         <div class="form">
                             <h5 class="one">full name</h5>
-                            <input class="two" type="name" placeholder="Enter your full name">
+                            <div class="inputBox">
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="Enter your full name">
+                            </div>
+                        </div>
+                        <div class="form">
+                            <h5 class="one">email address</h5>
+                            <div class="inputBox">
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" placeholder="Enter your email">
+                            </div>
+                        </div>
+                        <div class="form">
+                            <h5 class="one">password</h5>
+                            <div class="inputBox">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="password" placeholder="Create a password">
+                                <i class="fa-solid fa-eye togglePassword" id="togglePassword"></i>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <h5 class="one">Confirm password</h5>
+                            <div class="inputBox">
+                                <i class="fa-solid fa-lock"></i>
+                                <input type="text" placeholder="Confirm your password">
+                                <i class="fa-solid fa-eye togglePassword" id="togglePassword"></i>
+                            </div>
+                        </div>
+                        <div class="form">
+                            <h5 class="one">Gerder</h5>
+                            <div class="genderBox">
+
+                                <label class="genderOption">
+                                    <input type="radio" name="gender">
+                                    <span class="customRadio"></span>
+                                    <span>Male</span>
+                                </label>
+
+                                <label class="genderOption">
+                                    <input type="radio" name="gender">
+                                    <span class="customRadio"></span>
+                                    <span>Female</span>
+                                </label>
+
+                                <div class="genderOption">
+                                    <input type="radio" name="gender">
+                                    <span class="customRadio"></span>
+                                    <span>Others</span>
+                                </div>
+
+                            </div>
                         </div>
                     </form>
+                    <div class="termsBox">
+                            <label class="checkOption">
+                                <input type="checkbox">
+                                <span class="customCheck"></span>
+                            </label>
+
+                            <p>
+                                I agree to the
+                                <a href="#">terms & conditions</a>
+                                and
+                                <a href="#">privacy policy</a>
+                            </p>
+                        </div>
+                        <button type="submit" class="signupBtn">Sign Up</button>
+
+                        <p class="loginText">
+                            Already have an account?
+                            <a href="#">Login</a>
+                        </p>
                 </div>
             </div>
         </div>
