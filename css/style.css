@@ -2,21 +2,33 @@
 body{
     background-color: #000;
 }
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
 /* ===== common css style end ===== */
 
 /* ===== card css style start ===== */
+#card{
+    padding-top: 200px;
+}
+.cardBox{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 .stack {
     position: relative;
-    width: 180px;
-    height: 240px;
+    width: 200px;
+    height: 280px;
 }
 
 .card {
     position: absolute;
     top: 0;
     left: 0;
-    width: 180px;
-    height: 240px;
+    width: 200px;
+    height: 280px;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     transition: transform 0.5s cubic-bezier(.2, .9, .3, 1.2)
