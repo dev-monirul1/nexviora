@@ -47,6 +47,7 @@ body{
 }
 
 .card {
+    padding-top: 10px;
     aspect-ratio: 200/280;
     position: absolute;
     top: 0;
