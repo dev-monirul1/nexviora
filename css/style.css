@@ -1,4 +1,10 @@
 /* ===== common css style start ===== */
+*{
+    font-family: "Pliant", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     background-color: #000;
 }
@@ -10,7 +16,22 @@ body{
 
 /* ===== card css style start ===== */
 #card{
-    padding-top: 200px;
+    padding-top: 50px;
+}
+.Heading{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.Heading h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: normal;
+     background: linear-gradient(90deg, #ff0000, #0000ff);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
 }
 .cardBox{
     display: flex;
@@ -80,18 +101,40 @@ body{
     -o-transform: translate(90px , -30px) rotate(18deg);
 }
 .logContent{
-    margin-top: 80px;
+    margin-top: 70px;
     display: flex;
     justify-content: center;
 }
 .logBox{
+    padding: 30px 30px;
     width: 600px;
     height: 800px;
     border-radius: 40px;
-    border: 3px solid whitesmoke;
+   border: 3px solid transparent;
+    border-radius: 20px;
+
+    background:
+        linear-gradient(#000, #000) padding-box,
+        linear-gradient(90deg, #ff0000, #0000ff) border-box;
+    /* border: 3px solid whitesmoke; */
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
+}
+.logBox .logBoxHeading{
+    text-align: center;
+}
+.logBox .logBoxHeading h2{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: normal;
+     background: linear-gradient(90deg, #ff0000, #0000ff);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
 }
 /* ===== card css style end ===== */
