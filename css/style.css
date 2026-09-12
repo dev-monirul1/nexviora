@@ -204,12 +204,9 @@ body{
     opacity: .7;
     outline: none;
 }
-
-
 .genderGroup {
     margin-top: 30px;
 }
-
 .genderBox {
     display: flex;
     align-items: center;
@@ -220,7 +217,6 @@ body{
     border-radius: 10px;
     background: transparent;
 }
-
 .genderOption {
     display: flex;
     align-items: center;
@@ -230,11 +226,9 @@ body{
     color: #fff;
     cursor: pointer;
 }
-
 .genderOption input {
     display: none;
 }
-
 .customRadio {
     width: 24px;
     height: 24px;
@@ -243,11 +237,9 @@ body{
     display: inline-block;
     position: relative;
 }
-
 .genderOption input:checked + .customRadio {
     border-color: #2455d6;
 }
-
 .genderOption input:checked + .customRadio::after {
     content: "";
     position: absolute;
@@ -260,24 +252,19 @@ body{
     transform: translate(-50%, -50%);
 }
 
-
-
 .termsBox {
     display: flex;
     align-items: flex-start;
     gap: 25px;
     margin: 35px 0 30px;
 }
-
 .checkOption {
     cursor: pointer;
     flex-shrink: 0;
 }
-
 .checkOption input {
     display: none;
 }
-
 .customCheck {
     width: 25px;
     height: 25px;
@@ -286,12 +273,10 @@ body{
     display: block;
     position: relative;
 }
-
 .checkOption input:checked + .customCheck {
     background: #2455d6;
     border-color: #2455d6;
 }
-
 .checkOption input:checked + .customCheck::after {
     content: "✓";
     position: absolute;
@@ -302,49 +287,40 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .termsBox p {
     font-size: 18px;
     line-height: 1.8;
     color: #fff;
     letter-spacing: 1.8px;
 }
-
 .termsBox a,
 .loginText a {
     color: #2455d6;
     text-decoration: none;
 }
-
-
-
 .signupBtn {
     width: 100%;
     padding: 16px;
-
     border: 2px solid transparent;
     border-radius: 10px;
-
     background: #2455d6;
     color: #fff;
-
     font-size: 22px;
     font-weight: 700;
-
     cursor: pointer;
     transition: .3s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
-
 .signupBtn:hover {
     color: #2455d6;
     background: transparent;
     border: 2px solid #2455d6;
 }
-
-
 .loginText {
     margin-top: 30px;
-
     text-align: center;
     font-size: 18px;
     color: #fff;
