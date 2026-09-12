@@ -19,7 +19,9 @@
     <!-- ===== font awesome cdn link end ===== -->
 
     <!-- ===== css link start ===== -->
-     <link rel="icon" href="./images/favicon-removebg-preview.png">
+    <link rel="icon" href="./images/favicon-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <!-- ===== css link end ===== -->
 </head>
@@ -28,23 +30,29 @@
     <!-- ===== card css start ===== -->
     <section id="card">
         <div class="container">
-            <div class="Heading">
-                <h1>welcome to nexviora</h1>
-            </div>
-            <div class="cardBox">
-                <div class="stack">
-                    <div class="card c1">
-                        <i class="fa-regular fa-face-grin-squint"></i>
+            <div class="row justify-content-center">
+                <div class="c0l-sm-4 col-lg-9">
+                    <div class="Heading">
+                        <h1>welcome to nexviora</h1>
                     </div>
-                    <div class="card c2">
-                        <i class="fa-regular fa-face-grin-tongue-squint"></i>
-                    </div>
-                    <div class="card c3">
-                        <i class="fa-regular fa-face-laugh"></i>
+                    <div class="cardBox">
+                        <div class="stack">
+                            <div class="card c1">
+                                <i class="fa-regular fa-face-grin-squint"></i>
+                            </div>
+                            <div class="card c2">
+                                <i class="fa-regular fa-face-grin-tongue-squint"></i>
+                            </div>
+                            <div class="card c3">
+                                <i class="fa-regular fa-face-laugh"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="logContent">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-lg-8">
+                    <div class="logContent">
                 <div class="logBox">
                     <div class="logBoxHeading">
                         <h2>create account</h2>
@@ -107,30 +115,36 @@
                         </div>
                     </form>
                     <div class="termsBox">
-                            <label class="checkOption">
-                                <input type="checkbox">
-                                <span class="customCheck"></span>
-                            </label>
+                        <label class="checkOption">
+                            <input type="checkbox">
+                            <span class="customCheck"></span>
+                        </label>
 
-                            <p>
-                                I agree to the
-                                <a href="#">terms & conditions</a>
-                                and
-                                <a href="#">privacy policy</a>
-                            </p>
-                        </div>
-                        <button type="submit" class="signupBtn">Sign Up</button>
-
-                        <p class="loginText">
-                            Already have an account?
-                            <a href="#">Login</a>
+                        <p>
+                            I agree to the
+                            <a href="#">terms & conditions</a>
+                            and
+                            <a href="#">privacy policy</a>
                         </p>
+                    </div>
+                    <button type="submit" class="signupBtn">Sign Up</button>
+
+                    <p class="loginText">
+                        Already have an account?
+                        <a href="#">Login</a>
+                    </p>
                 </div>
             </div>
+                </div>
+            </div>
+
+            
         </div>
     </section>
     <!-- ===== card css end ===== -->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
