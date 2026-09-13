@@ -312,10 +312,6 @@ body{
     font-weight: 700;
     cursor: pointer;
     transition: .3s;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
 }
 .signupBtn:hover {
     color: #2455d6;
