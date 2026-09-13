@@ -24,15 +24,14 @@ body{
     text-transform: uppercase;
 }
 .Heading h1{
+    max-width: 100%;
     font-size: 64px;
     font-weight: 700;
     letter-spacing: 2px;
     line-height: normal;
      background: linear-gradient(90deg, #ff0000, #0000ff);
-
     -webkit-background-clip: text;
     background-clip: text;
-
     -webkit-text-fill-color: transparent;
 }
 .cardBox{
@@ -108,7 +107,7 @@ body{
     -o-transform: translate(90px , -30px) rotate(18deg);
 }
 .logContent{
-    margin: 70px 0;
+    margin: 70px auto;
     display: flex;
     justify-content: center;
 }
