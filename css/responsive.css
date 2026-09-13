@@ -1,65 +1,67 @@
 /* sm applies to x-small devices (portrait phones, less than 576px)  */
 @media (max-width: 575.98px) {
     .Heading h1 {
-        font-size: 36px;
+        font-size: 24px;
         letter-spacing: 1.5px;
-        max-width: 100px;
     }
-    .logBox{
-    padding: 15px 20px;
-   
-}
-.logBox .logBoxHeading h2{
-    font-size: 32px;
-}
-.logBox .logBoxHeading p{
-    font-size: 14px; 
-}
-.form .one{
-    font-size: 16px;
-    margin-bottom: 6px;
-}
-.inputBox i {
-    font-size: 16px;
-}
-.inputBox input {
-    padding: 10px 20px 10px 30px;
-    font-size: 14px;
-}
-.inputBox input::placeholder{
-    font-size: 14px;
-} 
-.customRadio {
-    width: 20px;
-    height: 20px;
-}
-.termsBox p {
-    font-size: 14px;
-}
-.loginText {
-    font-size: 14px;
-}
-.genderBox {
-    padding: 10px 20px;
-}
+
+    .logBox {
+        padding: 15px 20px;
+
+    }
+
+    .logBox .logBoxHeading h2 {
+        font-size: 32px;
+    }
+
+    .logBox .logBoxHeading p {
+        font-size: 14px;
+    }
+
+    .form .one {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .inputBox i {
+        font-size: 16px;
+    }
+
+    .inputBox input {
+        padding: 10px 20px 10px 30px;
+        font-size: 14px;
+    }
+
+    .inputBox input::placeholder {
+        font-size: 14px;
+    }
+
+    .customRadio {
+        width: 20px;
+        height: 20px;
+    }
+
+    .termsBox p {
+        font-size: 14px;
+    }
+
+    .loginText {
+        font-size: 14px;
+    }
+
+    .genderBox {
+        padding: 10px 20px;
+    }
 }
 
 /* md applies to small devices (landscape phones, less than 768px)  */
-@media (max-width: 767.98px) {
-    
-}
+@media (max-width: 767.98px) {}
 
 /* lg applies to medium devices (tablets, less than 992px)  */
-@media (max-width: 991.98px) {
-    
-}
+@media (max-width: 991.98px) {}
 
 /* xl applies to large devices (desktops, less than 1200px)  */
-@media (max-width: 1199.98px) {
-    
-}
+@media (max-width: 1199.98px) {}
 
 /* xxl applies to x-large devices (large desktops, less than 1400px)  */
-@media (max-width: 1399.98px) {
-    
-}
+@media (max-width: 1399.98px) {}
