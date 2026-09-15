@@ -8,6 +8,11 @@
 body{
     background-color: #000;
 }
+h1,h2,h3,h4,h5,h6.p{
+    padding: 0;
+    margin: 0;
+    line-height: 0.8;
+}
 .container{
     max-width: 1240px;
     margin: 0 auto;
@@ -24,7 +29,7 @@ body{
     text-transform: uppercase;
 }
 .Heading h1{
-    width: 100%;
+    max-width: 100%;
     font-size: 64px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -40,7 +45,6 @@ body{
     text-align: center;
 }
 .stack {
-    aspect-ratio: 200/280;
     position: relative;
     width: 200px;
     height: 280px;
@@ -178,7 +182,6 @@ body{
     left: 94%;
     top: 50%;
     transform: translateY(-50%);
-
     color: #888;
     cursor: pointer;
     z-index: 2;

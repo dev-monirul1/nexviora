@@ -1,46 +1,70 @@
 /* sm applies to x-small devices (portrait phones, less than 576px)  */
 @media (max-width: 575.98px) {
     .Heading h1 {
-        font-size: 24px;
+        font-size: 44px;
         letter-spacing: 1.5px;
     }
+    .card{
+        width: 180px;
+        height: 250px;
+        left: 10px;
+    }
+    .logContent{
+    margin: 40px auto;
+}
 
     .logBox {
-        padding: 15px 20px;
+        padding: 30px 15px;
 
     }
 
     .logBox .logBoxHeading h2 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     .logBox .logBoxHeading p {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .form .one {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 6px;
     }
 
     .inputBox i {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .inputBox input {
-        padding: 10px 20px 10px 30px;
+        padding: 10px 20px 10px 40px;
         font-size: 14px;
     }
 
     .inputBox input::placeholder {
         font-size: 14px;
     }
+    .inputBox .togglePassword {
+    left: 93%;
+}
 
     .customRadio {
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
     }
-
+    .genderOption input:checked + .customRadio::after {
+    width: 8px;
+    height: 8px;
+}
+    .genderOption {
+    font-size: 14px;
+}
+    .termsBox {
+    gap: 18px;
+}
+    .customCheck {
+    width: 20px;
+    height: 20px;
+}
     .termsBox p {
         font-size: 14px;
     }
@@ -52,13 +76,27 @@
     .genderBox {
         padding: 10px 20px;
     }
+    .signupBtn {
+    font-size: 20px;
+}
 }
 
 /* md applies to small devices (landscape phones, less than 768px)  */
-@media (max-width: 767.98px) {}
-
+@media (max-width: 767.98px) {
+     .Heading h1 {
+        font-size: 48px;
+        letter-spacing: 1.5px;
+    }
+    .inputBox .togglePassword {
+    left: 92%;
+}
+}
 /* lg applies to medium devices (tablets, less than 992px)  */
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    .inputBox .togglePassword {
+    left: 92%;
+}
+}
 
 /* xl applies to large devices (desktops, less than 1200px)  */
 @media (max-width: 1199.98px) {}
