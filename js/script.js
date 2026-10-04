@@ -31,7 +31,21 @@ icon2.addEventListener("click", ()=>{
 
 
 
-// const name = 
-// const email
-// const passwordInput
-// const Confirmpassword
+// const form = document.getElementById(".form")
+
+
+// const name = document.getElementById("name")
+// const email =document.getElementById("email")
+// const passwordInput = document.getElementById("password")
+// const Confirmpassword =document.getElementById("Confirmpassword")
+
+
+// form.addEventListener("submit", (e)=>{
+
+//     e.preventDefault()
+
+
+//     if (condition) {
+        
+//     }
+// })
