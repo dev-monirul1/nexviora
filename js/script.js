@@ -28,3 +28,10 @@ icon2.addEventListener("click", ()=>{
         icon2.classList.replace("fa-eye-slash", "fa-eye");
     }
 })
+
+
+
+// const name = 
+// const email
+// const passwordInput
+// const Confirmpassword
