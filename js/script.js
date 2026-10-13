@@ -31,21 +31,21 @@ icon2.addEventListener("click", ()=>{
 
 
 
-// const form = document.getElementById(".form")
+const form = document.getElementById(".formWrap")
 
 
-// const name = document.getElementById("name")
-// const email =document.getElementById("email")
-// const passwordInput = document.getElementById("password")
-// const Confirmpassword =document.getElementById("Confirmpassword")
+const name = document.getElementById("name")
+const email =document.getElementById("email")
+const passwordInput = document.getElementById("password")
+const Confirmpassword =document.getElementById("Confirmpassword")
 
 
-// form.addEventListener("submit", (e)=>{
+form.addEventListener("submit", (e)=>{
 
-//     e.preventDefault()
+    e.preventDefault()
 
 
-//     if (condition) {
+    if (condition) {
         
-//     }
-// })
+    }
+})
