@@ -158,7 +158,7 @@ h1,h2,h3,h4,h5,h6.p{
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 .form .one{
     font-size: 20px;
@@ -266,7 +266,7 @@ h1,h2,h3,h4,h5,h6.p{
     display: flex;
     align-items: flex-start;
     gap: 25px;
-    margin: 35px 0 30px;
+    margin: 5px 0 0;
 }
 .checkOption {
     cursor: pointer;
