@@ -63,6 +63,7 @@ h1,h2,h3,h4,h5,h6.p{
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     transition: transform 0.5s cubic-bezier(.2, .9, .3, 1.2)
+    
 }
 
 .c1 {
@@ -88,6 +89,9 @@ h1,h2,h3,h4,h5,h6.p{
     -moz-transform: rotate(6deg);
     -ms-transform: rotate(6deg);
     -o-transform: rotate(6deg);
+}
+.stack:hover{
+    cursor: pointer;
 }
 .stack:hover .c1{
     transform: translate(-90px , -30px) rotate(-18deg);
