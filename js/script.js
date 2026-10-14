@@ -46,52 +46,64 @@ const passwordError = document.querySelector(".passwordError")
 const confirmPasswordError = document.querySelector(".confirmPasswordError")
 
 const peraError = document.querySelector(".peraError")
+// const registerError = document.querySelector(".registerError")
 
 form.addEventListener("submit", (e) => {
 
     e.preventDefault()
+
+    let isValid = true;
 
 
     if (!name.value) {
         nameError.innerHTML = "Name is required"
         nameError.style.color = "red"
         name.style.border = "1px solid red"
+        isValid = false
     }
     else {
         nameError.innerHTML = ""
         name.style.border = "1px solid #2455d6"
+        isValid = true
     }
     if (!email.value) {
         emailError.innerHTML = "Email is required"
         emailError.style.color = "red"
         email.style.border = "1px solid red"
+        isValid = false
     }
     else {
         emailError.innerHTML = ""
         email.style.border = "1px solid #2455d6"
+        isValid = true
     }
     if (!passwordInput.value) {
         passwordError.innerHTML = "Password is required"
         passwordError.style.color = "red"
         passwordInput.style.border = "1px solid red"
+        isValid = false
     }
     else {
         passwordError.innerHTML = ""
         passwordInput.style.border = "1px solid #2455d6"
+        isValid = true
     }
     if (!Confirmpassword.value) {
         confirmPasswordError.innerHTML = "Confirm Password is required"
         confirmPasswordError.style.color = "red"
         Confirmpassword.style.border = "1px solid red"
+        isValid = false
     }
     else if (Confirmpassword.value !== passwordInput.value) {
         confirmPasswordError.innerHTML = "Passwords do not match"
         confirmPasswordError.style.color = "red"
         Confirmpassword.style.border = "1px solid red"
+        isValid = false
     }
     else {
         confirmPasswordError.innerHTML = ""
         Confirmpassword.style.border = "1px solid #2455d6"
+        isValid = true
     }
 
 
@@ -107,9 +119,11 @@ form.addEventListener("submit", (e) => {
     if (!selectedGender.length) {
         genderError.innerHTML = "Please select your gender";
         genderBox.style.border = "1px solid red";
+        isValid = false;
     } else {
         genderError.innerHTML = "";
         genderBox.style.border = "1px solid #ddd";
+        isValid = true;
     }
 
 
@@ -119,11 +133,24 @@ form.addEventListener("submit", (e) => {
 
     if (!checkBox.checked) {
         peraError.innerHTML = "Please accept the terms & conditions and privacy policy";
-        
+        isValid = false;
+
        
     } else {
         peraError.innerHTML = "";
+        isValid = true;
        
+    }
+
+
+
+
+    if (isValid === true) {
+        // registerError.innerHTML = "Form submitted successfully";
+        // registerError.style.color = "green";
+
+        alert("Form submitted successfully");
+
         
     }
 
