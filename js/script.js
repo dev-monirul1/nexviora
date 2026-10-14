@@ -39,3 +39,10 @@ const email =document.querySelector("#email")
 const passwordInput = document.querySelector("#password")
 const Confirmpassword =document.querySelector("#Confirmpassword")
 
+const nameError = document.querySelector(".nameError")
+const emailError = document.querySelector(".emailError")
+const passwordError = document.querySelector(".passwordError")
+const confirmPasswordError = document.querySelector(".confirmPasswordError")
+const genderError = document.querySelector(".genderError")
+const peraError = document.querySelector(".peraError")
+
