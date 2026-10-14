@@ -96,10 +96,10 @@ form.addEventListener("submit", (e) => {
 
 
 
-        const selectedGender = document.querySelectorAll(
+    const selectedGender = document.querySelectorAll(
         ".radioGender:checked");
-        const genderBox = document.querySelector(".genderBox")
-        const genderError = document.querySelector(".genderError")
+    const genderBox = document.querySelector(".genderBox")
+    const genderError = document.querySelector(".genderError")
 
 
 
@@ -111,4 +111,22 @@ form.addEventListener("submit", (e) => {
         genderError.innerHTML = "";
         genderBox.style.border = "1px solid #ddd";
     }
+
+
+    const checkBox = document.querySelector(".checkBox");
+    const peraError = document.querySelector(".peraError");
+
+
+    if (!checkBox.checked) {
+        peraError.innerHTML = "Please accept the terms & conditions and privacy policy";
+        
+       
+    } else {
+        peraError.innerHTML = "";
+       
+        
+    }
+
+
+
 })
