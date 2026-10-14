@@ -46,3 +46,50 @@ const confirmPasswordError = document.querySelector(".confirmPasswordError")
 const genderError = document.querySelector(".genderError")
 const peraError = document.querySelector(".peraError")
 
+form.addEventListener("submit", (e)=>{
+
+    e.preventDefault()
+    
+
+    if (!name.value) {
+        nameError.innerHTML = "Name is required"
+        nameError.style.color = "red"
+        name.style.border = "1px solid red"
+    }
+    else{
+        nameError.innerHTML = ""
+        name.style.border = "1px solid #2455d6"
+    }
+    if (!email.value) {
+        emailError.innerHTML = "Email is required"
+        emailError.style.color = "red"
+        email.style.border = "1px solid red"
+    }
+    else{
+        emailError.innerHTML = ""
+        email.style.border = "1px solid #2455d6"
+    }
+    if (!passwordInput.value) {
+        passwordError.innerHTML = "Password is required"
+        passwordError.style.color = "red"
+        passwordInput.style.border = "1px solid red"
+    }
+    else{
+        passwordError.innerHTML = ""
+        passwordInput.style.border = "1px solid #2455d6"
+    }
+    if (!Confirmpassword.value) {
+        confirmPasswordError.innerHTML = "Confirm Password is required"
+        confirmPasswordError.style.color = "red"
+        Confirmpassword.style.border = "1px solid red"
+    }
+    else if (Confirmpassword.value !== passwordInput.value) {
+        confirmPasswordError.innerHTML = "Passwords do not match"
+        confirmPasswordError.style.color = "red"
+        Confirmpassword.style.border = "1px solid red"
+    }
+    else{
+        confirmPasswordError.innerHTML = ""
+        Confirmpassword.style.border = "1px solid #2455d6"
+    }
+})
