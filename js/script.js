@@ -14,3 +14,28 @@ icon.addEventListener("click", ()=>{
     }
 })
 
+const icon2 = document.querySelector(".icon2")
+const password2 = document.querySelector(".password2")
+
+icon2.addEventListener("click", ()=>{
+
+    if (password2.type === "password") {
+        password2.type = "text"
+        icon2.classList.replace("fa-eye", "fa-eye-slash");
+
+    }else{
+        password2.type = "password"
+        icon2.classList.replace("fa-eye-slash", "fa-eye");
+    }
+})
+
+
+
+const form = document.querySelector(".formWrap")
+
+
+const name = document.querySelector("#name")
+const email =document.querySelector("#email")
+const passwordInput = document.querySelector("#password")
+const Confirmpassword =document.querySelector("#Confirmpassword")
+
