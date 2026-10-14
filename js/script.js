@@ -1,14 +1,14 @@
 const icon = document.querySelector(".togglePassword")
 const password = document.querySelector(".password")
 
-icon.addEventListener("click", ()=>{
+icon.addEventListener("click", () => {
 
     if (password.type === "password") {
         password.type = "text"
         icon.classList.replace("fa-eye", "fa-eye-slash");
-        
 
-    }else{
+
+    } else {
         password.type = "password"
         icon.classList.replace("fa-eye-slash", "fa-eye");
     }
@@ -17,13 +17,13 @@ icon.addEventListener("click", ()=>{
 const icon2 = document.querySelector(".icon2")
 const password2 = document.querySelector(".password2")
 
-icon2.addEventListener("click", ()=>{
+icon2.addEventListener("click", () => {
 
     if (password2.type === "password") {
         password2.type = "text"
         icon2.classList.replace("fa-eye", "fa-eye-slash");
 
-    }else{
+    } else {
         password2.type = "password"
         icon2.classList.replace("fa-eye-slash", "fa-eye");
     }
@@ -35,30 +35,29 @@ const form = document.querySelector(".formWrap")
 
 
 const name = document.querySelector("#name")
-const email =document.querySelector("#email")
+const email = document.querySelector("#email")
 const passwordInput = document.querySelector("#password")
-const Confirmpassword =document.querySelector("#Confirmpassword")
-const genderBox = document.querySelector(".genderBox")
-const radioGender = document.querySelectorAll(".radioGender")
+const Confirmpassword = document.querySelector("#Confirmpassword")
+
 
 const nameError = document.querySelector(".nameError")
 const emailError = document.querySelector(".emailError")
 const passwordError = document.querySelector(".passwordError")
 const confirmPasswordError = document.querySelector(".confirmPasswordError")
-const genderError = document.querySelector(".genderError")
+
 const peraError = document.querySelector(".peraError")
 
-form.addEventListener("submit", (e)=>{
+form.addEventListener("submit", (e) => {
 
     e.preventDefault()
-    
+
 
     if (!name.value) {
         nameError.innerHTML = "Name is required"
         nameError.style.color = "red"
         name.style.border = "1px solid red"
     }
-    else{
+    else {
         nameError.innerHTML = ""
         name.style.border = "1px solid #2455d6"
     }
@@ -67,7 +66,7 @@ form.addEventListener("submit", (e)=>{
         emailError.style.color = "red"
         email.style.border = "1px solid red"
     }
-    else{
+    else {
         emailError.innerHTML = ""
         email.style.border = "1px solid #2455d6"
     }
@@ -76,7 +75,7 @@ form.addEventListener("submit", (e)=>{
         passwordError.style.color = "red"
         passwordInput.style.border = "1px solid red"
     }
-    else{
+    else {
         passwordError.innerHTML = ""
         passwordInput.style.border = "1px solid #2455d6"
     }
@@ -90,8 +89,26 @@ form.addEventListener("submit", (e)=>{
         confirmPasswordError.style.color = "red"
         Confirmpassword.style.border = "1px solid red"
     }
-    else{
+    else {
         confirmPasswordError.innerHTML = ""
         Confirmpassword.style.border = "1px solid #2455d6"
+    }
+
+
+
+        const selectedGender = document.querySelectorAll(
+        ".radioGender:checked");
+        const genderBox = document.querySelector(".genderBox")
+        const genderError = document.querySelector(".genderError")
+
+
+
+
+    if (!selectedGender.length) {
+        genderError.innerHTML = "Please select your gender";
+        genderBox.style.border = "1px solid red";
+    } else {
+        genderError.innerHTML = "";
+        genderBox.style.border = "1px solid #ddd";
     }
 })
