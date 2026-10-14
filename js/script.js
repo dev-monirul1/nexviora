@@ -151,7 +151,8 @@ form.addEventListener("submit", (e) => {
 
         alert("Form submitted successfully");
 
-        
+        form.reset();
+
     }
 
 
