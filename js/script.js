@@ -38,6 +38,8 @@ const name = document.querySelector("#name")
 const email =document.querySelector("#email")
 const passwordInput = document.querySelector("#password")
 const Confirmpassword =document.querySelector("#Confirmpassword")
+const genderBox = document.querySelector(".genderBox")
+const radioGender = document.querySelectorAll(".radioGender")
 
 const nameError = document.querySelector(".nameError")
 const emailError = document.querySelector(".emailError")
